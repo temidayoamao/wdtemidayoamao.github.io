@@ -47,7 +47,8 @@ border-radius: 5px;
 
 .navlinks {
     display: flex;
-    gap: 30px;
+    gap: 7px;
+    margin: 10px;
 }
 
 
@@ -148,6 +149,7 @@ height: auto;
     height: 250px;
     background-color: #c8defc;
     border-radius: 8px;
+    padding-bottom: 30px;
 }
 
 .company_profile p {
@@ -198,17 +200,19 @@ height: auto;
 .container{
     display: flex;
     justify-content: space-between;
+    
 }
 
 
 .job_spec{
     display: grid;
-    gap: 10px;
+    gap: 25px;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
     background-color: #c8defc;
     padding-bottom: 20px;
+   
 }
 
 .job_spec h1{
@@ -218,9 +222,11 @@ height: auto;
 }
 
 .box{
-    max-width: 200px;
+    width: 250px;
+    justify-items: center;
     text-align: center;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
     background-color: purple;
     border-radius: 10px;
 }
@@ -236,8 +242,8 @@ height: auto;
     width: 100%;
     height: auto;
     background-color: darkgray;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 2px;
     border-radius: 5px;
 }
 
@@ -299,15 +305,27 @@ height: auto;
 }
 
 @media (max-width:768px) {
-    .nav-links{
+    .container{
         flex-direction: column;
-        width: 100%;
-        display: none;
+        align-items: center;
+        gap: 10px;
     }
-    .nav-links.active {
-        display: flex;
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
     }
-    .nav-links li{
-        margin: 10px 0;
+    .images{
+        margin-left: 55px;
+    }
+    /* .our_courses{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course {
+        width: 90%;
+        margin-bottom: 20px;
+    } */
+    .our_courses{
+        grid-template-columns: 1fr;
     }
 }
