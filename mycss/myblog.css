@@ -191,13 +191,15 @@ height: auto;
 
 .container{
     display: flex;
-    gap: 20px;
+    
     justify-content: space-between;
 }
 
 
 .job_spec{
     display: grid;
+    gap: 10px;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     background-color: #c8defc;
@@ -211,12 +213,11 @@ height: auto;
 }
 
 .box{
+    max-width: 300px;
     text-align: center;
     padding: 20px;
-    width: 30%;
-    height: 70vh;
     background-color: purple;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .box p{
@@ -234,6 +235,11 @@ height: auto;
     border-radius: 5px;
 }
 
+.course button{
+    border-radius: 5px;
+    background-color: #3f3fe6;
+    outline: none;
+}
 
 .course p{
     margin-bottom: 35px;
